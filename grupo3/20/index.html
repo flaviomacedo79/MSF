@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Médicos Sem Fronteiras</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #625454;
+        background: #fff;
+        counter-reset: mynum;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 45.625rem;
+      }
+
+      .limitSpace {
+        width: 36.875rem;
+        margin: inherit;
+      }
+
+      .marginLeft {
+        margin-left: 4.375rem;
+      }
+
+      .vermelho {
+        color: #ee0000;
+      }
+
+      .tom-azul {
+        color: #586469;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+        border-bottom: 0.25rem solid #005448;
+      }
+
+      header a,
+      footer a {
+        color: #586469;
+      }
+
+      .codigo {
+        margin-top: 2.1875rem;
+        margin-bottom: -10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .codigo h2 {
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
+
+      .codigo p {
+        margin-right: 80px;
+      }
+
+      .banner {
+        width: 100%;
+        min-height: 90px;
+        background-image: url(./bgDetalheBanner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        font-size: 0.875rem;
+        color: #625454;
+      }
+
+      .banner p {
+        padding-top: 5.3rem;
+        width: 55ch;
+      }
+
+      .bgMain {
+        background: #e6e7e8;
+        margin-top: -19px;
+        padding: 2rem 0 3rem;
+      }
+
+      .bgMain p {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        width: 58ch;
+      }
+
+      .bgMain a {
+        color: #625454;
+      }
+
+      .bgMain ul {
+        margin-left: 15px;
+      }
+
+      .bgMain ul li {
+        margin-left: 5px;
+      }
+
+      .equipe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 20px;
+      }
+
+      .equipe p {
+        font-size: 0.875rem;
+        color: #000000;
+      }
+
+      .equipe img {
+        width: 155px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0 0;
+        font-size: 0.875rem;
+        color: #586469;
+        background: #e6e7e8;
+      }
+
+      footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      footer ul,
+      footer li {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      #icones li:nth-child(odd) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      footer a {
+        text-align: center;
+      }
+
+      .icones {
+        border-bottom: 20px solid #005448;
+        margin-bottom: 12px;
+      }
+
+      .icones p {
+        color: #000;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+
+      .footer-link {
+        background: #fff;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 0.6875rem;
+      }
+
+      .footer-link a {
+        color: #586469;
+      }
+
+      .sublinhado {
+        text-decoration: underline;
+      }
+
+      #lista {
+        margin: 0 0 1rem 0;
+      }
+
+      #lista p {
+        margin: 2px 0;
+      }
+
+      p.numbered:before {
+        content: counter(mynum) ".";
+        counter-increment: mynum;
+        font-weight: 600;
+        color: #ee0000;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="limitSpace">
+        <p class="vermelho">
+          Autorize suas doações por débito automático<br />
+          para MSF no Itaú
+        </p>
+        <p class="tom-azul">
+          Se não estiver visualizando o e-mail, <a href="#">clique aqui</a>
+        </p>
+      </header>
+
+      <div class="limitSpace">
+        <div class="codigo">
+          <h2 class="marginLeft vermelho">Olá, [Nome].</h2>
+          <p><strong>Código do doador:</strong> [NÚMERO]</p>
+        </div>
+        <section class="banner">
+          <p class="marginLeft">
+            Agradecemos o seu cadastro. É muito bom ver seu interesse em apoiar
+            Médicos Sem Fronteiras (MSF), contribuindo para levar cuidados de
+            saúde a quem mais precisa ao redor do mundo.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="limitSpace">
+        <div class="bgMain">
+          <div class="marginLeft">
+            <p>Confira abaixo os dados da sua doação:</p>
+            <p>
+              <strong>Valor:</strong> [VALOR]<br />
+              <strong>Forma de Pagamento:</strong> débito automático<br />
+              <strong>Frequência:</strong> mensal
+            </p>
+
+            <p>
+              Queremos muito contar com a sua ajuda e, para isso, precisamos que
+              você dedique alguns minutos para autorizar os débitos de sua
+              doação para MSF em sua conta corrente no Itaú.
+            </p>
+
+            <p>
+              Essa é uma exigência do banco, e a autorização pode ser feita
+              pelos seguintes canais:
+            </p>
+            <div id="lista">
+              <p class="numbered">
+                <span class="sublinhado">Internet Banking</span>
+              </p>
+              <p class="numbered">Aplicativo</p>
+              <p class="numbered">Caixa eletrônico</p>
+              <p class="numbered">Agência bancária</p>
+              <p class="numbered">
+                Telefone de atendimento, que no verso do seu cartão bancário.
+              </p>
+            </div>
+
+            <p class="vermelho">
+              Sua doação é muito importante! Autorize agora mesmo<br />
+              as doações por débito automático para MSF no Itaú.
+            </p>
+            <p>Podemos contar com você?</p>
+            <p>Obrigado por confiar no nosso trabalho.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container">
+      <div class="limitSpace">
+        <div class="equipe container-txt">
+          <p>Equipe Médicos sem Fronteiras</p>
+          <img src="./logoMedicosSemFronteiras.png" alt="" />
+        </div>
+        <section class="redes-sociais">
+          <footer>
+            <div class="icones">
+              <p>Quando a vida mais precisa de cuidados, estaremos lá.</p>
+              <ul id="icones">
+                <li><img src="./iconesFacebook.png" alt="ícone facebook" /></li>
+                <li><img src="./iconestWITTER.png" alt="ícone facebook" /></li>
+                <li>
+                  <img src="./iconesInstagram.png" alt="ícone facebook" />
+                </li>
+                <li><img src="./iconesYoutube.png" alt="ícone facebook" /></li>
+                <li><img src="./iconesLinkedIN.png" alt="ícone facebook" /></li>
+              </ul>
+            </div>
+          </footer>
+        </section>
+        <div class="footer-link">
+          <a href="#">Cancelar Inscrição</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

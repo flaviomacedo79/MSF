@@ -85,7 +85,7 @@
     }
 
     .destaque {
-      width: 320px;
+      width: 400px;
       margin-top: 1.4375rem;
       text-transform: uppercase;
       display: flex;
@@ -95,8 +95,8 @@
     }
 
     .destaque-texto {
-      font-size: .875rem;
-      padding: 10px 8px 10px 8px;
+      font-size: 1rem;
+      padding: 10px 27px 10px 27px;
       background: #1e3764;
       border-radius: 10px;
       color: #ffffff;
@@ -114,6 +114,7 @@
     main p {
       margin-top: 1rem;
       font-size: .925rem;
+      width: 58ch;
     }
 
 
@@ -163,22 +164,34 @@
     }
 
     .dir {
-      left: 160px;
+      margin-top: 5px;
+      left: 140px;
     }
 
     .esq {
-      right: 160px;
+      margin-top: 5px;
+      right: 140px;
+    }
+
+    .sobre h2{
+      margin-top: 13px;
+      font-size: 1.25rem;
+      text-transform: uppercase;
     }
 
     .sobre p {
-      line-height: 1.4;
+      line-height: 1.6;
+    }
+
+    .sobre a{
+      color: #fff;
+      text-decoration: none;
     }
 
     h2 {
-      text-transform: uppercase;
-      margin-top: 12px;
-      margin-bottom: 10px;
-      font-size: .875rem;
+        margin-bottom: 0.75rem;
+        font-size: 1.25rem;
+        font-weight: 400;
     }
 
     h3 {
@@ -209,18 +222,34 @@
 
     footer {
       text-align: center;
-      padding: 20px 0;
+      padding: 20px 0 0;
       font-size: .875rem;
       color: #586469;
       text-decoration: underline;
+      background: #fff;
     }
+
+    .footer-link {
+        background: #fff;
+        text-align: center;
+        padding: 20px 0;
+        font-size: .6875rem;
+      }
+
+      .footer-link a{
+        color: #586469;
+      }
+
+      .sublinhado {
+        text-decoration: underline;
+      }
   </style>
 </head>
 
 <body>
   <div class="container">
     <header class="limitSpace">
-      <p class="vermelho">Finalize sua doação agora mesmo!</p>
+      <p class="vermelho">Finalize sua doação <span class="sublinhado">agora mesmo!</span></p>
       <p class="tom-azul">Se não estiver visualizando o e-mail, <a href="#">clique aqui</a></p>
     </header>
 
@@ -292,14 +321,10 @@
           <h2>sobre msf</h2>
           <div class="dir"></div>
           <p>
-            Somos uma organização independente que leva ajuda médica de
-            emergência às pessoas mais necessitadas, que foram afetadas por
-            graves crises mundiais de saúde. Atuamos em projetos em mais de 70
-            países e contamos como trabalho de mais de 35 mil profissionais do
-            mundo todo.<br />
-            Em 1999, MSF recebeu o prêmio Nobel da Paz.
+            Médicos Sem Fronteiras é uma organização humanitária internacional independente que leva ajuda médica de emergência a pessoas atingidas por conflitos armados, desastre naturais e socioambientais, desnutrição, epidemias e exclusão do acesso a cuidados de saúde. Atuamos em mais de 70 países, inclusive no Brasil, e nossas equipes contam com mais de 63 mil profissionais do mundo todo. Em 1999, MSF recebeu o prêmo Nobel da Paz. Visite <a href="#"> <strong>www.msf.org.br</strong></a>
+           
           </p>
-          <p>Visite www.msf.org.br</p>
+       
         </div>
 
         <div class="icones">
@@ -312,13 +337,13 @@
             <li><img src="./iconesLinkedIN.png" alt="ícone facebook" /></li>
           </ul>
         </div>
-      </section>
+      </footer>
+    </section>
+    <div class="footer-link">
+      <a href="#">Cancelar Inscrição</a>
     </div>
   </div>
-  <footer>
-    <a href="#">Cancelar Inscrição</a>
-  </footer>
-  </div>
+</div>
 </body>
 
 </html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Médicos Sem Fronteiras</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #625454;
+        background: #fff;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 45.625rem;
+      }
+
+      .limitSpace {
+        width: 36.875rem;
+        margin: inherit;
+      }
+
+      .marginLeft {
+        margin-left: 4.375rem;
+      }
+
+      .vermelho {
+        color: #ee0000;
+      }
+
+      .tom-azul {
+        color: #586469;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+        border-bottom: 0.25rem solid #005448;
+      }
+
+      header a,
+      footer a {
+        color: #586469;
+      }
+
+      .banner {
+        width: 100%;
+        min-height: 90px;
+        background-image: url(./bgDetalheBanner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        font-size: 1.625rem;
+        color: #fff;
+      }
+
+      .banner h2 {
+        margin-top: 2.5rem;
+        margin-bottom: 0.75rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
+
+      .banner p {
+        padding-top: 4.8rem;
+        width: 28ch;
+      }
+
+      .bgMain {
+        background: #e6e7e8;
+        margin-top: -40px;
+        padding: 3rem 0;
+      }
+
+      .destaque {
+        width: 320px;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        background: #025448;
+        border-radius: 10px;
+      }
+
+      .destaque-texto {
+        font-size: 0.875rem;
+        padding: 10px 8px 10px 8px;
+        background: #1e3764;
+        border-radius: 10px;
+        color: #ffffff;
+        border-right: 1px solid #ffffff;
+      }
+
+      .destaque-icone {
+        margin-left: 10px;
+      }
+
+      .destaque img {
+        width: 1rem;
+      }
+
+      .bgMain p {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        width: 57ch;
+      }
+
+      .bgMain a {
+        color: #625454;
+      }
+
+      .bgMain ul {
+        margin-left: 15px;
+      }
+
+      .bgMain ul li {
+        margin-left: 5px;
+      }
+
+      .equipe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 20px;
+      }
+
+      .equipe p {
+        font-size: 0.875rem;
+        color: #000000;
+      }
+
+      .equipe img {
+        width: 155px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0 0;
+        font-size: 0.875rem;
+        color: #586469;
+        background: #e6e7e8;
+      }
+
+      footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      footer ul,
+      footer li {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      #icones li:nth-child(odd) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      footer a {
+        text-align: center;
+      }
+
+      .icones {
+        border-bottom: 20px solid #005448;
+        margin-bottom: 12px;
+      }
+
+      .icones p {
+        color: #000;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+
+      .footer-link {
+        background: #fff;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 0.6875rem;
+      }
+
+      .footer-link a {
+        color: #586469;
+      }
+
+      .sublinhado {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="limitSpace">
+        <p class="vermelho">
+          Finalize sua doação <span class="sublinhado">aqui!</span>
+        </p>
+        <p class="tom-azul">
+          Se não estiver visualizando o e-mail, <a href="#">clique aqui</a>
+        </p>
+      </header>
+
+      <div class="limitSpace">
+        <section class="banner">
+          <h2 class="marginLeft vermelho">Olá, [Nome].</h2>
+          <p class="marginLeft vermelho">
+            Uma vida com dignidade precisa de cuidados básicos de saúde
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="limitSpace">
+        <div class="bgMain">
+          <div class="destaque marginLeft">
+            <span class="destaque-texto">finalize sua doação agora mesmo</span>
+            <span class="destaque-icone">
+              <img src="./curtida.png" alt="Icone Joinha" />
+            </span>
+          </div>
+
+          <div class="marginLeft">
+            <p>
+              Sua solidariedade vai fazer muita diferença no trabalho de Médicos
+              Sem Fronteiras (MSF) e, por isso, queremos contar com a sua
+              contribuição.
+            </p>
+            <p>
+              Quando você doa para MSF, nos ajuda a oferecer cuidados de saúde,
+              de forma independente, neutra e imparcial, a pessoas que estão
+              vivendo grandes crises humanitárias.
+            </p>
+            <p>
+              Ao iniciar um projeto, nossas equipes avaliam o contexto daquele
+              local para poder implementar a solução que melhor se adapte às
+              necessidades da população que iremos atender.
+            </p>
+            <p>Conheça os principais contextos em que atuamos:</p>
+            <ul class="vermelho">
+              <li>Emergências climáticas;</li>
+              <li>Epidemias e pandemias;</li>
+              <li>Desastre naturais e socioambientais;</li>
+              <li>Refugiados, deslocados internos e pessoas em movimento;</li>
+              <li>Exclusão do acesso a cuidados de saúde;</li>
+              <li>Conflitos armados e guerras;</li>
+            </ul>
+            <p>
+              Todo esse trabalho só é possível graças à doação de pessoas
+              solidárias como você.
+            </p>
+            <p>
+              Seu próximo passo é agir. É fácil e rápido.
+              <a href="#">Acesse aqui</a> e finalize sua doação.
+            </p>
+            <p>Muito obrigada.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container">
+      <div class="limitSpace">
+        <div class="equipe container-txt">
+          <p>Equipe Médicos sem Fronteiras</p>
+          <img src="./logoMedicosSemFronteiras.png" alt="" />
+        </div>
+        <section class="redes-sociais">
+          <footer>
+            <div class="icones">
+              <p>Quando a vida mais precisa de cuidados, estaremos lá.</p>
+              <ul id="icones">
+                <li><img src="./iconesFacebook.png" alt="ícone facebook" /></li>
+                <li><img src="./iconestWITTER.png" alt="ícone facebook" /></li>
+                <li>
+                  <img src="./iconesInstagram.png" alt="ícone facebook" />
+                </li>
+                <li><img src="./iconesYoutube.png" alt="ícone facebook" /></li>
+                <li><img src="./iconesLinkedIN.png" alt="ícone facebook" /></li>
+              </ul>
+            </div>
+          </footer>
+        </section>
+        <div class="footer-link">
+          <a href="#">Cancelar Inscrição</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Médicos Sem Fronteiras</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #625454;
+      background: #fff;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 45.625rem;
+      background: #fff;
+    }
+
+    .limitSpace {
+      width: 36.875rem;
+       margin: inherit;
+    }
+
+    .marginLeft {
+      margin-left: 4.375rem;
+    }
+
+    .vermelho{
+      color: #ee0000;
+    }
+
+    .tom-azul{
+      color:#586469;
+    }
+
+    header {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      font-size: 0.75rem;
+      padding: 0.5rem 0;
+      border-bottom: 0.25rem solid #005448;
+    }
+
+    header a,footer a{
+      color:#586469;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: .75rem;
+      font-weight: 400;
+    }
+
+    .banner {
+      background: #00f;
+      width: 100%;
+      min-height: 229px;
+      background-image: url(./imgBanner.jpg);
+      background-position: center;
+      background-size: cover;
+      padding-top:11rem;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .banner p {
+      margin-left: 8.5rem;
+    }
+
+    .destaque {
+      width: 400px;
+      margin-top: 1.4375rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      background: #025448;
+      border-radius: 10px;
+    }
+
+    .destaque-texto {
+      font-size: 1rem;
+      padding: 10px 27px 10px 27px;
+      background: #1e3764;
+      border-radius: 10px;
+      color: #ffffff;
+      border-right: 1px solid #ffffff;
+    }
+
+    .destaque-icone {
+      margin-left: 10px;
+    }
+
+    .destaque img {
+      width: 1rem;
+    }
+
+    main p {
+      margin-top: 1rem;
+      font-size: .925rem;
+    }
+
+    main .lista{
+      display: flex;
+      flex-direction: column;
+      color: #ee0000;
+      padding:0;
+      margin: 0 20px;
+      list-style:disc;
+    }
+
+    .lista li{
+      padding:0;
+      margin: 0;
+    }
+
+    .equipe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 20px;
+      }
+
+      .equipe p {
+        font-size: 0.875rem;
+        color: #000000;
+      }
+
+      .equipe img {
+        width: 155px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0 0;
+        font-size: 0.875rem;
+        color: #586469;
+        background: #e6e7e8;
+      }
+
+      footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      footer ul,
+      footer li {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      #icones li:nth-child(odd) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      footer a {
+        text-align: center;
+      }
+
+      .icones {
+        border-bottom: 20px solid #005448;
+        margin-bottom: 12px;
+      }
+
+      .icones p {
+        color: #000;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+
+      .footer-link {
+        background: #fff;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 0.6875rem;
+      }
+
+      .footer-link a {
+        color: #586469;
+      }
+
+      .sublinhado {
+        text-decoration: underline;
+      }
+
+      .vermelho a {
+        color: #ee0000;
+      }
+
+      .black {
+        color: #000;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="limitSpace">
+      <p class="tom-azul">Se não estiver visualizando o e-mail, <a href="#">clique aqui</a></p>
+    </header>
+
+    <div class="limitSpace">
+      <h2 class="marginLeft vermelho">Olá, [Nome].</h2>
+    </div>
+
+    <section class="banner">
+      <p>Juntos transformamos vidas</p>
+  </div>
+  </section>
+
+  <main class="container">
+    <div class="limitSpace">
+
+      <div class="marginLeft">
+        <p>
+          Que bom ter você ao nosso lado, ajudando Médicos Sem Fronteiras<br />
+          (MSF) a levar cuidados de saúde a pessoas que foram afetadas por<br />
+          graves crises ao redor do mundo.
+        </p>
+        <p>
+          Seu cadastro foi realizado com sucesso e a partir de agora você se<br />
+tornou um Doador Sem Fronteiras!
+        </p>
+        <p>
+         Confira abaixo os dados da doação:
+        </p>
+
+        <p>
+         <strong>Valor: </strong>[VALOR]<br />
+         <strong>Forma de Pagamento: </strong>débito automático<br />
+         <strong>Frequência: </strong>mensal
+        </p>
+      </div>
+
+      <div class="marginLeft">
+        <p>
+          O valor de sua doação será debitado na sua conta corrente no [NOME
+BANCO].
+        </p>
+        
+        <p class="black">
+          Em caso de dúvidas, entre em contato pelos telefones 4000-2550
+          (capitais e<br />
+          regiões metropolitanas) ou 0800 940 3585 (demais localidades, de
+          qualquer<br />
+          telefone fixo), de segunda a sexta-feira, das 9 às 19 horas, ou
+          envie um<br />
+          e-mail para<span class="sublinhado"> doador@msf.org.br.</span>
+        </p>
+        <p>Obrigada por confiar no nosso trabalho.</p>
+      </div>
+    </div>
+  </main>
+  <div class="container">
+    <div class="limitSpace">
+      <div class="equipe container-txt">
+        <p>Equipe Médicos sem Fronteiras</p>
+        <img src="./logoMedicosSemFronteiras.png" alt="" />
+      </div>
+
+      <section class="redes-sociais">
+        <footer>
+          <div class="icones">
+            <p>Quando a vida mais precisa de cuidados, estaremos lá.</p>
+            <ul id="icones">
+              <li><img src="./iconesFacebook.png" alt="ícone facebook" /></li>
+              <li><img src="./iconestWITTER.png" alt="ícone facebook" /></li>
+              <li>
+                <img src="./iconesInstagram.png" alt="ícone facebook" />
+              </li>
+              <li><img src="./iconesYoutube.png" alt="ícone facebook" /></li>
+              <li><img src="./iconesLinkedIN.png" alt="ícone facebook" /></li>
+            </ul>
+          </div>
+        </footer>
+      </section>
+      <div class="footer-link">
+        <a href="#">Cancelar Inscrição</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

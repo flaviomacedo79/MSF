@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Médicos Sem Fronteiras</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #625454;
+        background: #fff;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 45.625rem;
+      }
+
+      .limitSpace {
+        width: 36.875rem;
+        margin: inherit;
+      }
+
+      .marginLeft {
+        margin-left: 4.375rem;
+      }
+
+      .vermelho {
+        color: #ee0000;
+      }
+
+      .tom-azul {
+        color: #586469;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+        border-bottom: 0.25rem solid #005448;
+      }
+
+      header a,
+      footer a {
+        color: #586469;
+      }
+
+      h2 {
+        margin-top: 2.5rem;
+        font-weight: 400;
+      }
+
+      .banner {
+        width: 100%;
+        min-height: 90px;
+        background-image: url(./bgDetalheBanner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        font-size: 0.875rem;
+        color: #625454;
+      }
+
+      .banner p {
+        font-size: 1.5rem;
+        padding-top: 4rem;
+
+        color: #ee0000;
+      }
+
+      .bgMain {
+        background: #e6e7e8;
+        padding: 2rem 0 3rem;
+      }
+
+      .bgMain p {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+      }
+
+      .bgMain a {
+        color: #625454;
+      }
+
+      .bgMain ul {
+        margin-left: 15px;
+      }
+
+      .bgMain ul li {
+        margin-left: 5px;
+      }
+
+      .destaque {
+        width: 320px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        background: #025448;
+        border-radius: 10px;
+      }
+
+      .destaque-texto {
+        font-size: 1rem;
+        padding: 10px;
+        background: #1e3764;
+        border-radius: 10px;
+        color: #ffffff;
+        border-right: 1px solid #ffffff;
+      }
+
+      .destaque-icone {
+        margin-left: 10px;
+      }
+
+      .destaque img {
+        width:1.8rem;
+        margin-top: 3px;
+      }
+
+      .equipe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 20px;
+      }
+
+      .equipe p {
+        font-size: 0.875rem;
+        color: #000000;
+      }
+
+      .equipe img {
+        width: 155px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0 0;
+        font-size: 0.875rem;
+        color: #586469;
+        background: #e6e7e8;
+      }
+
+      footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      footer ul,
+      footer li {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      #icones li:nth-child(odd) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      footer a {
+        text-align: center;
+      }
+
+      .icones {
+        border-bottom: 20px solid #005448;
+        margin-bottom: 12px;
+      }
+
+      .icones p {
+        color: #000;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+
+      .footer-link {
+        background: #fff;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 0.6875rem;
+      }
+
+      .footer-link a {
+        color: #586469;
+      }
+
+      .sublinhado {
+        text-decoration: underline;
+      }
+
+      .boleto{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .boleto div{
+        margin-top: 1rem;
+        max-width: 50px;
+      }
+
+      .boleto img{
+        width: 50px;
+      }
+
+      .listaOpcoes p{
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+
+      .listaOpcoes ul{
+        font-size: .875rem;
+      }
+
+      .listaOpcoes ul:last-child{
+        margin-bottom: 1rem;
+      }
+
+      .black {
+        color: #000;
+      }
+
+      .vermelho a{
+        color: #ee0000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="limitSpace">
+        <p class="vermelho">
+         Acesse agora o seu <a href="#">boleto</a>
+        </p>
+        <p class="tom-azul">
+          Se não estiver visualizando o e-mail, <a href="#">clique aqui</a>
+        </p>
+      </header>
+
+      <div class="limitSpace">
+
+          <h2 class="marginLeft vermelho">Olá, [Nome].</h2>
+
+        <section class="banner">
+          <p class="marginLeft">Sua doação ajuda a salvar vidas</p>
+        </section>
+      </div>
+    </div>
+ 
+    <main class="container">
+      <div class="limitSpace">
+              
+      <div class="limitSpace">
+        <div class="bgMain">
+          <div class="destaque marginLeft">
+            <span class="destaque-texto">acesse agora o seu boleto</span>
+            <span class="destaque-icone">
+              <img src="./destBoleto.png" alt="Icone Joinha" />
+            </span>
+          </div>
+          <div class="marginLeft">
+            <p>Que alegria ver que você se interessou pelo nosso trabalho e escolheu<br />
+              fazer uma doação mensal por boleto bancário.</p>
+            <p>
+              Assim que o pagamento for efetivado, sua doação será confirmada, e<br />
+              você estará ajudando Médicos Sem Fronteiras (MSF) a levar cuidados<br />
+              de saúde a pessoas atingidas por graves emergências em mais de 70<br />
+              países ao redor do mundo.
+            </p>
+           
+           <div class="boleto">
+            <div>
+              <img src="./boleto.png" alt="img Boleto">
+            </div>
+            <p>
+              <a href="#"><span class="sublinhado">Acesse aqui</span></a> o seu boleto
+            </p>
+           </div>
+          
+           <p class="vermelho">
+            É fácil! Em apenas 3 passos, você paga o seu boleto:
+           </p>
+
+           <div class="listaOpcoes">
+            <p class="vermelho">
+              OPÇÂO 1
+            </p>
+            <ul>
+              <li>Acesse o boleto <a href="#">aqui</a>.</li>
+              <li>Copie e cole o código numérico no aplicativoou no site do seu banco.</li>
+              <li>Siga o passo a passo para realizar o pagamento.</li>
+            </ul>
+
+            <p class="vermelho">
+              OPÇÂO 2
+            </p>
+            <ul>
+              <li>Acesse o boleto <a href="#">aqui</a>.</li>
+              <li>Imprima o boleto e leia o código de barras diretamente pelo aplicativo<br />
+                do banco no seu celular.</li>
+              <li>Siga o passo a passo para realizar o pagamento.</li>
+            </ul>
+
+            <p class="vermelho">
+              OPÇÂO 3
+            </p>
+            <ul>
+              <li>Acesse o boleto <a href="#">aqui</a>.</li>
+              <li>Imprima o boleto.</li>
+              <li>Realize o pagamento no seu banco, nas lotéricas, nas agências<br /> bancárias ou nos caixas eletrônicos.</li>
+            </ul>
+          </div>
+
+          <div class="destaque">
+            <span class="destaque-texto">acesse agora o seu boleto</span>
+            <span class="destaque-icone">
+              <img src="./destBoleto.png" alt="Icone Joinha" />
+            </span>
+          </div>
+
+
+            <p>
+              Aguardamos a confirmação do pagamento do seu boleto. Falta muito pouco para você se tornar um Doador Sem Fronteiras!
+            </p>
+
+            <p class="vermelho">
+              Se você já realizou o pagamento, por favor desconsidere<br />
+este e-mail.
+            </p>
+
+            <p class="black">
+              Em caso de dúvidas, entre em contato pelos telefones 4000-2550
+              (capitais e
+              regiões metropolitanas) ou 0800 940 3585 (demais localidades, de
+              qualquer<br />
+              telefone fixo), de segunda a sexta-feira, das 9 às 19 horas, ou
+              envie um<br />
+              e-mail para<span class="sublinhado"> doador@msf.org.br.</span>
+            </p>
+          
+            <p>Muito obrigada.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container">
+      <div class="limitSpace">
+        <div class="equipe container-txt">
+          <p>Equipe Médicos sem Fronteiras</p>
+          <img src="./logoMedicosSemFronteiras.png" alt="" />
+        </div>
+        <section class="redes-sociais">
+          <footer>
+            <div class="icones">
+              <p>Quando a vida mais precisa de cuidados, estaremos lá.</p>
+              <ul id="icones">
+                <li><img src="./iconesFacebook.png" alt="ícone facebook" /></li>
+                <li><img src="./iconestWITTER.png" alt="ícone facebook" /></li>
+                <li>
+                  <img src="./iconesInstagram.png" alt="ícone facebook" />
+                </li>
+                <li><img src="./iconesYoutube.png" alt="ícone facebook" /></li>
+                <li><img src="./iconesLinkedIN.png" alt="ícone facebook" /></li>
+              </ul>
+            </div>
+          </footer>
+        </section>
+        <div class="footer-link">
+          <a href="#">Cancelar Inscrição</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

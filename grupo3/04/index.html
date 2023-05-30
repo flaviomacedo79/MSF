@@ -85,31 +85,32 @@
     }
 
     .destaque {
-      width: 400px;
-      margin-top: 1.4375rem;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      background: #025448;
-      border-radius: 10px;
-    }
+        width: 370px;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        background: #025448;
+        border-radius: 10px;
+      }
 
-    .destaque-texto {
-      font-size: 1rem;
-      padding: 10px 27px 10px 27px;
-      background: #1e3764;
-      border-radius: 10px;
-      color: #ffffff;
-      border-right: 1px solid #ffffff;
-    }
+      .destaque-texto {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+        background: #1e3764;
+        border-radius: 10px;
+        color: #ffffff;
+        border-right: 1px solid #ffffff;
+      }
 
-    .destaque-icone {
-      margin-left: 10px;
-    }
+      .destaque-icone {
+        margin-left: 10px;
+      }
 
-    .destaque img {
-      width: 1rem;
-    }
+      .destaque img {
+        width: 1.6rem;
+      }
 
     main p {
       margin-top: 1rem;
@@ -124,11 +125,6 @@
       padding:0;
       margin: 0 20px;
       list-style:disc;
-    }
-
-    .lista li{
-      padding:0;
-      margin: 0;
     }
 
     .equipe {
@@ -256,6 +252,20 @@
       .sublinhado {
         text-decoration: underline;
       }
+
+      .atuacao p {
+        display: flex;
+        gap: 12px;
+      }
+
+      .atuacao p {
+              margin: 0;
+      }
+
+      .atuacao span {
+              margin: 0;
+      }
+
   </style>
 </head>
 
@@ -305,16 +315,16 @@
           você poderá:
         </p>
 
-        <ul class="lista">
-          <li>Acompanhar o seu histórico de doação;</li>
-          <li>Atualizar seus dados cadastrais;</li>
-          <li>Atualizar dados de pagamento;</li>
-          <li>Emitir a segunda via do boleto das doações mensais;</li>
-          <li>Emitir o recibo das doações realizadas;</li>
-          <li>Fazer uma doação especial.</li>
-        </ul>
-
-
+        <div class="vermelho atuacao">
+          <p><span>&bull;</span>Acompanhar o seu histórico de doação;</p>
+          <p><span>&bull;</span>Atualizar seus dados cadastrais;</p>
+          <p><span>&bull;</span>Atualizar dados de pagamento;</p>
+          <p>
+            <span>&bull;</span>Emitir a segunda via do boleto das doações mensais;
+          </p>
+          <p><span>&bull;</span>Emitir o recibo das doações realizadas;</p>
+          <p><span>&bull;</span>Fazer uma doação especial.</p>
+        </div>
       </div>
 
       <div class="destaque marginLeft">

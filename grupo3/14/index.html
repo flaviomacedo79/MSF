@@ -97,7 +97,8 @@
 
       .destaque-texto {
         font-size: 1rem;
-        padding: 10px 15px;
+        padding: 10px;
+        text-align: center;
         background: #1e3764;
         border-radius: 10px;
         color: #ffffff;
@@ -109,7 +110,7 @@
       }
 
       .destaque img {
-        width: 1.1875rem;
+        width: 1.6rem;
       }
 
       .bgMain p {
@@ -119,14 +120,6 @@
 
       .bgMain a {
         color: #625454;
-      }
-
-      .bgMain ul {
-        margin-left: 15px;
-      }
-
-      .bgMain ul li {
-        margin-left: 5px;
       }
 
       .equipe {
@@ -208,6 +201,19 @@
       .black {
         color: #000;
       }
+
+      .bgMain .atuacao p {
+        margin: 0;
+      }
+
+      .bgMain .atuacao span {
+        margin: 0;
+      }
+
+      .atuacao p {
+        display: flex;
+        gap: 12px;
+      }
     </style>
   </head>
 
@@ -262,14 +268,17 @@
             </p>
 
             <p>Conheça os principais contextos em que atuamos:</p>
-            <ul class="vermelho">
-              <li>Emergências climáticas;</li>
-              <li>Epidemias e pandemias;</li>
-              <li>Desastre naturais e socioambientais;</li>
-              <li>Refugiados, deslocados internos e pessoas em movimento;</li>
-              <li>Exclusão do acesso a cuidados de saúde;</li>
-              <li>Conflitos armados e guerras;</li>
-            </ul>
+            <div class="vermelho atuacao">
+              <p><span>&bull;</span>Emergências climáticas;</p>
+              <p><span>&bull;</span> Epidemias e pandemias;</p>
+              <p><span>&bull;</span> Desastre naturais e socioambientais;</p>
+              <p>
+                <span>&bull;</span> Refugiados, deslocados internos e pessoas em
+                movimento;
+              </p>
+              <p><span>&bull;</span> Exclusão do acesso a cuidados de saúde;</p>
+              <p><span>&bull;</span> Conflitos armados e guerras;</p>
+            </div>
             <p class="black">
               Em caso de dúvidas, entre em contato pelos telefones 4000-2550
               (capitais e<br />

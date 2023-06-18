@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #625454;
+  background: #fff;
+  counter-reset: mynum;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 730px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+.bg-secundary {
+  background: #fff;
+}
+
+.vermelho {
+  color: #f00;
+}
+
+.preto {
+  color: #000;
+}
+
+.negrito {
+  font-weight: 600;
+}
+
+.sizeXXL {
+  font-size: 26px;
+}
+
+.sizeXL {
+  font-size: 20px;
+}
+
+.size {
+  font-size: 16px;
+}
+
+.sizeX {
+  font-size: 18px;
+}
+
+header {
+  padding: 5px 0;
+  background: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: cetner;
+  justify-content: space-between;
+  border-bottom: 3px solid #005448;
+  margin-bottom: 20px;
+}
+
+header a {
+  color: inherit;
+}
+
+.container {
+  width: 589px;
+  margin: 0 auto;
+}
+
+.container__content {
+  width: 480px;
+  padding-bottom: 11px;
+  margin: inherit;
+}
+
+.container__content p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.titulo {
+  width: 480px;
+  margin: 160px 0 12px;
+  margin: inherit;
+}
+
+.depoimento {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.depoimento_img {
+  position: relative;
+  max-width: 176px;
+}
+
+.depoimento_texto {
+  display: flex;
+  gap: 4px;
+  align-items: start;
+}
+
+.depoimento_texto p {
+  line-height: 1.1;
+}
+
+.depoimento_texto-img {
+  width: 40px;
+  margin-top: -16px;
+}
+
+.bg_color {
+  background: #fff;
+  padding-top: 13px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.bg_color::after {
+  content: "Foto: Nasir Ghafoor/MSF";
+  font-size: 10px;
+  rotate: -90deg;
+  color: #6d6f71;
+  white-space: nowrap;
+  margin-left: -46px;
+}
+
+#btn {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+#btn .destaque {
+  width: 300px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  background: #025448;
+  border-radius: 10px;
+}
+
+#btn .destaque-texto {
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+  background: #1e3764;
+  border-radius: 10px;
+  color: #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+#btn .destaque-icone {
+  margin: 0 auto;
+}
+
+#btn .destaque img {
+  width: 1.6rem;
+}
+
+#destaque {
+  width: 589px;
+  margin: 0 auto;
+  padding: 13px 40px 13px 68px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #000;
+}
+
+.alinhamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.destaque_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #586469;
+}
+
+.destaque_img img {
+  width: 63px;
+}
+
+.destaque_texto {
+  font-size: 12px;
+}
+
+.img_logo_msf {
+  width: 155px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px 0 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  border-bottom: 18px solid #005448;
+  background: #f1f2f2;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.cancelar_inscricao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+
+.cancelar_inscricao a {
+  font-size: 11px;
+  color: #586469;
+}
+  
+    </style>
+    <title>MSF - Médicos Sem Fronteiras</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <p class="vermelho"><a href="#">Baixe aqui</a> o seu presente</p>
+          <p>
+            Se não estiver visualizando o e-mail, <a href="#">clique aqui</a>
+          </p>
+        </header>
+
+        <div class="titulo">
+          <p class="vermelho sizeXL">Olá, [Nome].</p>
+        </div>
+        <div class="bg_color">
+          <img src="./img_banner.png" alt="Imagem Banner" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="container__content">
+          <p>Que alegria falar com você nesse dia tão especial!</p>
+
+          <p>
+            Hoje, você completa 3 anos ao lado de Médicos Sem Fronteiras
+            (MSF),<br />
+            e
+            <strong>
+              gostaríamos de agradecer por todo esse tempo de apoio e<br />
+              confiança. Você já faz parte da nossa história, assim como de<br />
+              tantas histórias que escrevemos com a sua ajuda.
+            </strong>
+          </p>
+
+          <p>
+            <strong>
+              Em agradecimento, conheça a história da Aisha Akello, obstetriz<br />
+              de MSF.
+            </strong>
+          </p>
+
+          <p>
+            Em 1988, aos 8 anos de idade, Aisha precisou deixar a Uganda com<br />
+            seus pais e irmãos. Na época, rebeldes roubavam e sequestravam as<br />
+            pessoas durante a noite, e ela e sua família precisavam passar a
+            noite<br />
+            fora de sua vila. Isso fez com que eles se mudassem para um campo<br />
+            de refugiados. Um dos irmãos de Aisha ficou gravemente
+            desnutrido.<br />
+            Ele foi levado a um centro de alimentação terapêutica que MSF<br />
+            administrava no acampamento e, felizmente, se recuperou.
+          </p>
+
+          <p>
+            Aisha trabalha como obstetriz há mais de 13 anos. Desse período,<br />
+            por sete anos ela trabalhou com Médicos Sem Fronteiras (MSF) em<br />
+            países como Uganda, Nigéria, Sudão do Sul, Sudão e Etiópia, antes<br />
+            de se juntar ao projeto de Dolo Ado, na região somali, onde<br />
+            atualmente trabalha.
+          </p>
+
+          <div class="depoimento">
+            <div class="depoimento_img">
+              <img src="./img_depoente.png" alt="Perfil Moses" />
+            </div>
+            <div class="depoimento_texto">
+              <div class="depoimento_texto-img">
+                <img src="./aspas_vermelho.png" alt="Imas Aspas vermelho" />
+              </div>
+              <div class="texto-depoimento">
+                <p class="vermelho sizeX">
+                  MSF salvou meu irmão &#8212; <br />
+                  agora eu trabalho ao redor<br />
+                  do mundo para ajudar<br />
+                  outras pessoas.<span>&rdquor;</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            <strong>
+              Por todo o apoio que você tem dado a MSF, gostaríamos de<br />
+              expressar nossa gratidão com este GIF especial. Ele é uma<br />
+              pequena demonstração de carinho e reconhecimento pelo que<br />
+              você faz por MSF.
+            </strong>
+          </p>
+
+          <div id="btn">
+            <div class="destaque">
+              <span class="destaque-texto">baixe aqui o seu presente</span>
+              <span class="destaque-icone">
+                <img src="./smile.png" alt="Ícone Smile Love" />
+              </span>
+            </div>
+          </div>
+
+          <p>
+            Com a sua contribuição constante, continuaremos ajudando a escrever
+            tantas histórias de esperança e superação.
+          </p>
+        </div>
+
+        <div id="destaque" class="bg-secundary">
+          <div class="alinhamento">
+            <div class="destaque_img">
+              <img src="./foto_fernanda.png" alt="Perfil Fernanda" />
+            </div>
+            <div>
+              <p>Fernanda Salerno</p>
+              <span class="destaque_texto"
+                >Gerente de relacionamento com o doador</span
+              >
+            </div>
+          </div>
+          <div class="img_logo_msf">
+            <img src="./logo_msf.png" alt="Logo Médicos Sem Fronteiras" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Quando a vida mais precisar de cuidado, estaremos lá.</p>
+          <ul>
+            <li><img src="./icon_facebook.png" alt="Ícone Facebook" /></li>
+            <li><img src="./icon_twitter.png" alt="Ícone Twitter" /></li>
+            <li><img src="./icon_instagram.png" alt="Ícone Instagram" /></li>
+            <li><img src="./icon_youtube.png" alt="Ícone Youtube" /></li>
+            <li><img src="./icon_linkedin.png" alt="Ícone LinkedIn" /></li>
+          </ul>
+        </footer>
+        <div class="cancelar_inscricao bg-secundary">
+          <a href="#">Cancelar inscrição</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

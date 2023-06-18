@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #625454;
+  background: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 730px;
+  margin: 0 auto;
+  background-image: url(./img_destaque.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 24px;
+}
+
+.container,
+header {
+  width: 589px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 87px;
+  background: #f1f2f2;
+}
+
+.container__content {
+  width: 480px;
+  padding: 16px 0 11px;
+  margin: inherit;
+}
+
+.container__content p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.bg-secundary {
+  background: #fff;
+}
+
+.vermelho {
+  color: #f00;
+}
+
+.preto {
+  color: #231f20;
+}
+
+.negrito {
+  font-weight: 600;
+}
+
+.sizeXXL {
+  font-size: 24px;
+}
+
+.sizeXL {
+  font-size: 20px;
+}
+
+.size {
+  font-size: 16px;
+}
+
+.sizeX {
+  font-size: 18px;
+}
+
+header {
+  padding: 5px 0;
+  background: #fff;
+  font-size: 12px;
+  text-align: right;
+  border-bottom: 3px solid #005448;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: inherit;
+}
+
+#highlight_testimonial {
+  width: 589px;
+  height: 202px;
+  margin: inherit;
+  padding: 180px 0 30px 10px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  gap: 8px;
+}
+
+.img_aspasbranco {
+  margin-top: -10px;
+  width: 40px;
+}
+
+#highlight_testimonial p {
+  margin-top: 6px;
+}
+
+#highlight_testimonial span {
+  font-size: 14px;
+}
+
+.titulo p {
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  margin: 16px 0;
+  font-weight: 400;
+}
+
+.depoimento {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.depoimento_img {
+  position: relative;
+  max-width: 176px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.depoimento_img span {
+  margin-top: 45px;
+  margin-left: -75px;
+  margin-right: -50px;
+  rotate: -90deg;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.depoimento_texto {
+  display: flex;
+  gap: 4px;
+  align-items: start;
+}
+
+.depoimento_texto p {
+  line-height: 1.1;
+}
+
+.depoimento_texto-img {
+  width: 40px;
+  margin-top: -16px;
+}
+
+#btn {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+#btn .destaque {
+  width: 320px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  background: #025448;
+  border-radius: 10px;
+}
+
+#btn .destaque-texto {
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+  background: #1e3764;
+  border-radius: 10px;
+  color: #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+#btn .destaque-icone {
+  margin: 0 auto;
+}
+
+#btn .destaque img {
+  width: 1.6rem;
+}
+
+#destaque {
+  width: 589px;
+  margin: 0 auto;
+  padding: 13px 40px 13px 68px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #000;
+}
+
+.alinhamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.destaque_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #586469;
+}
+
+.destaque_img img {
+  width: 63px;
+}
+
+.destaque_texto {
+  font-size: 12px;
+}
+
+.img_logo_msf {
+  width: 155px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px 0 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  border-bottom: 18px solid #005448;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.cancelar_inscricao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+
+.cancelar_inscricao a {
+  font-size: 11px;
+  color: #586469;
+}
+
+    </style>
+    <title>MSF - Médicos Sem Fronteiras</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="vermelho">
+          <a href="#"> Quero ajudar mensalmente </a>
+        </p>
+        <p>Se não estiver visualizando o e-mail, <a href="#">clique aqui</a></p>
+      </header>
+
+      <div id="highlight_testimonial">
+        <div class="img_aspasbranco">
+          <img src="./aspas_branco.png" alt="Aspas branco" />
+        </div>
+        <p class="sizeXXL">
+          Estou um passo mais perto do meu sonho<br />de salvar vidas na minha
+          comunidade.”<br />
+          <span>Changkuoth Yoa</span>
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="container__content">
+          <div class="titulo">
+            <h1 class="vermelho sizeXL">Olá, [Nome].</h1>
+          </div>
+          <p>
+            Estamos aqui para compartilhar com você a
+            <strong
+              >história incrível de Changkuoth Yoal e seus colegas da linha de
+              frente da saúde no<br />
+              Sudão do Sul.</strong
+            >
+          </p>
+
+          <p>
+            <strong>
+              Changkuoth é um enfermeiro recém-formado pela Academia de<br />Saúde
+              de Médicos Sem Fronteiras (MSF) em Lankien,
+            </strong>
+            região muito<br />
+            afetada por conflitos intercomunitários e com um sistema de saúde
+            frágil.
+          </p>
+
+          <p>
+            Ele e mais 87 alunos concluíram o programa intensivo de
+            treinamento<br />
+            sobre cuidados básicos de enfermagem clínica, com foco em 85<br />
+            habilidades, e que tem a duração de dois anos.
+          </p>
+
+          <p>
+            <strong>
+              A paixão de Changkuoth pelos cuidados de saúde surgiu aos 19<br />
+              anos, quando viu sua mãe lutando para sobreviver ao calazar (ou<br />
+              leishmaniose visceral). A dedicação dos médicos e enfermeiros o<br />
+              inspirou a seguir carreira na área de saúde.
+            </strong>
+          </p>
+
+          <div class="depoimento">
+            <div class="depoimento_img">
+              <span>Foto: MSF/Florence Miettaux</span>
+              <img src="./img_depoente.png" alt="Perfil Moses" />
+            </div>
+            <div class="depoimento_texto">
+              <div class="depoimento_texto-img">
+                <img src="./aspas_vermelho.png" alt="Imas Aspas vermelho" />
+              </div>
+              <div class="texto-depoimento">
+                <p class="vermelho sizeX">
+                  O aprendizado da<br />
+                  academia causou um<br />
+                  grande impacto em<br />
+                  mim. Aprendi muitas<br />
+                  habilidades que nunca<br />
+                  havia praticado antes.<span>&rdquor;</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Diante do desafio de encontrar profissionais de saúde
+            qualificados<br />
+            na região e da escassez de infraestrutura médica,<strong>
+              MSF sentiu a necessidade de investir em treinamento e capacitação
+              de equipes médicas por meio da Academia de Saúde de MSF, </strong
+            >que, em parceria<br />
+            com o Ministério da Saúde no país, iniciou seu programa na
+            República<br />
+            do Sudão do Sul em 2019.
+          </p>
+
+          <p>
+            <strong>
+              O programa não só melhora a qualidade dos cuidados prestados<br />
+              aos pacientes, como também contribui para aprimorar a equipe de<br />
+              trabalho para o sistema de saúde.
+            </strong>
+          </p>
+
+          <p>
+            A Academia de Saúde de MSF atua em países que não podem investir<br />
+            totalmente em seu sistema de saúde e têm imensas necessidades<br />
+            médicas. Seu objetivo final é trazer melhorias duradouras à
+            qualidade<br />
+            dos cuidados prestados e diminuir progressivamente a presença de<br />
+            profissionais internacionais, ajudando as equipes de saúde nacionais
+            a<br />
+            alcançar novos níveis de habilidades e autonomia.
+          </p>
+
+          <p>
+            Changkuoth e seus colegas da linha de frente da saúde se formaram
+            e<br />
+            estão cheios de esperança e vontade de oferecer cuidados de saúde<br />
+            melhores para as pessoas da comunidade.
+          </p>
+
+          <div id="btn">
+            <div class="destaque">
+              <span class="destaque-texto">quero ajudar mensalmente</span>
+              <span class="destaque-icone">
+                <img src="./smile.png" alt="Ícone Smile Love" />
+              </span>
+            </div>
+          </div>
+
+          <p>
+            <strong>
+              A história de Changkuoth e de seus colegas só é possível graças<br />
+              ao apoio constante dos nossos doadores,
+            </strong>
+            que permite que MSF<br />
+            ofereça projetos duradouros como a Academia de Saúde.
+          </p>
+
+          <p>
+            É por isso que precisamos ainda mais da sua ajuda.
+            <strong>
+              A qualquer<br />
+              momento você pode virar um doador regular.
+            </strong>
+            É fácil e rápido.
+          </p>
+
+          <p>Sua doação mensal dará esperança a quem mais precisa de ajuda.</p>
+        </div>
+
+        <div id="destaque" class="bg-secundary">
+          <div class="alinhamento">
+            <div class="destaque_img">
+              <img src="./foto_fernanda.png" alt="Perfil Fernanda" />
+            </div>
+            <div>
+              <p>Fernanda Salerno</p>
+              <span class="destaque_texto"
+                >Gerente de relacionamento com o doador</span
+              >
+            </div>
+          </div>
+          <div class="img_logo_msf">
+            <img src="./logo_msf.png" alt="Logo Médicos Sem Fronteiras" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Quando a vida mais precisar de cuidado, estaremos lá.</p>
+          <ul>
+            <li><img src="./icon_facebook.png" alt="Ícone Facebook" /></li>
+            <li><img src="./icon_twitter.png" alt="Ícone Twitter" /></li>
+            <li><img src="./icon_instagram.png" alt="Ícone Instagram" /></li>
+            <li><img src="./icon_youtube.png" alt="Ícone Youtube" /></li>
+            <li><img src="./icon_linkedin.png" alt="Ícone LinkedIn" /></li>
+          </ul>
+        </footer>
+        <div class="cancelar_inscricao bg-secundary">
+          <a href="#">Cancelar inscrição</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

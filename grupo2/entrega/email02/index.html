@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #625454;
+  background: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 730px;
+  margin: 0 auto;
+  background-image: url(./img_destaque.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 24px;
+}
+
+.bg-secundary {
+  background: #fff;
+}
+
+.vermelho {
+  color: #f00;
+}
+
+.preto {
+  color: #231f20;
+}
+
+.negrito {
+  font-weight: 600;
+}
+
+.sizeXXL {
+  font-size: 26px;
+}
+
+.sizeXL {
+  font-size: 20px;
+}
+
+.size {
+  font-size: 16px;
+}
+
+.sizeX {
+  font-size: 18px;
+}
+
+header {
+  padding: 5px 0;
+  background: #fff;
+  font-size: 12px;
+  text-align: right;
+  border-bottom: 3px solid #005448;
+}
+
+header a {
+  color: inherit;
+}
+
+#highlight_testimonial {
+  width: 589px;
+  height: 202px;
+  margin: inherit;
+  padding: 80px 0 30px 84px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  gap: 8px;
+}
+
+.img_aspasbranco {
+  margin-top: -10px;
+  width: 40px;
+}
+
+#highlight_testimonial p {
+  margin-top: 6px;
+}
+
+#highlight_testimonial span {
+  font-size: 12px;
+}
+
+.container {
+  width: 589px;
+  margin: 0 auto;
+  background: #f1f2f2;
+}
+
+.container__content {
+  width: 480px;
+  padding: 27px 0 11px;
+  margin: inherit;
+}
+
+.container__content p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.titulo p {
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  margin: 16px 0;
+  font-weight: 400;
+}
+
+.depoimento {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.depoimento_img {
+  width: 176px;
+}
+
+.depoimento_texto {
+  display: flex;
+  gap: 4px;
+  align-items: start;
+}
+
+.depoimento_texto p {
+  line-height: 1.1;
+}
+
+.depoimento_texto-img {
+  width: 40px;
+  margin-top: -16px;
+}
+
+#destaque {
+  width: 589px;
+  margin: 0 auto;
+  padding: 13px 40px 13px 68px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #000;
+}
+
+.alinhamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.destaque_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #586469;
+}
+
+.destaque_img img {
+  width: 63px;
+}
+
+.destaque_texto {
+  font-size: 12px;
+}
+
+.img_logo_msf {
+  width: 155px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px 0 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  border-bottom: 18px solid #005448;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.cancelar_inscricao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+
+.cancelar_inscricao a {
+  font-size: 11px;
+  color: #586469;
+}
+
+      </style>
+    <title>MSF - Médicos Sem Fronteiras</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <p>
+            Se não estiver visualizando o e-mail, <a href="#">clique aqui</a>
+          </p>
+        </header>
+      </div>
+
+      <div id="highlight_testimonial">
+        <div class="img_aspasbranco">
+          <img src="./aspas_branco.png" alt="Aspas branco" />
+        </div>
+        <p>
+          Quando dei por mim, estava embarcando<br />
+          rumo ao Líbano, para uma experiência <br />
+          que, certamente, mudou minha vida.”<br />
+          <span>Denise Viuniski</span>
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="container__content">
+          <div class="titulo">
+            <p class="preto sizeX negrito">
+              Diário de Bordo <span>&#8226;</span> Líbano
+            </p>
+            <p class="vermelho sizeXXL">Denise Viuniski</p>
+            <p class="vermelho size">Médica</p>
+          </div>
+          <h1 class="vermelho sizeXL">Olá, [Nome].</h1>
+          <p>
+            Gostaríamos de dividir com você a
+            <strong>história da brasileira Denise Viuniski.</strong>
+          </p>
+
+          <p>
+            Médica e professora universitária, Denise sempre quis fazer parte
+            da<br />
+            equipe de Médicos Sem Fronteiras (MSF), mas a rotina e a correria
+            do<br />
+            dia a dia foram adiando o seu desejo.
+          </p>
+
+          <p>
+            Após mais de 30 anos dedicados à medicina, ela estava decidida a se
+            aposentar e buscar uma nova atividade em sua vida.<strong>
+              Com a pandemia <br />
+              da COVID-19 </strong
+            >e diante da angústia de ver tantas pessoas precisando de ajuda,
+            <strong>
+              decidiu se cadastrar junto ao Ministério da Saúde e, de<br />
+              repente, se viu trabalhando em um hospital de campanha em<br />
+              Roraima, lado a lado com médicos e enfermeiros de MSF.
+            </strong>
+          </p>
+
+          <p>
+            Lá, conseguiu encontrar o sentido que vinha buscando ao longo da<br />
+            carreira na medicina:
+            <strong>
+              estar exatamente onde seu trabalho se faz<br />
+              mais necessário e atender pessoas que precisam urgentemente de<br />
+              cuidados de saúde. </strong
+            >Esse foi o estímulo de que Denise precisava para<br />
+            atuar em seu primeiro projeto de MSF.
+          </p>
+
+          <p>
+            Uma semana após enviar os documentos solicitados por MSF, ela<br />
+            recebeu o convite para atuar em uma posição adequada à sua<br />
+            experiência e ao seu interesse. Logo sentiu uma forte emoção em
+            ver<br />
+            que algo que parecia tão distante estava se tornando realidade.
+          </p>
+
+          <p>
+            <strong>
+              Em março de 2022, Denise embarcou para o Líbano, onde<br />
+              permaneceu durante quase um ano e onde atuou em clínicas de<br />
+              doenças crônicas no Vale do Bekaa, atendendo refugiados sírios<br />
+              obrigados a deixar seu país por causa da guerra.
+            </strong>
+            São milhares de pessoas que precisaram deixar tudo o que tinham para
+            trás, e que<br />
+            vivem, há anos, em tendas nos acampamentos de refugiados, sob o
+            sol<br />
+            implacável dos meses de verão e sob camadas de neve no inverno.
+          </p>
+
+          <div class="depoimento">
+            <div class="depoimento_img">
+              <img src="./img_depoente.png" alt="Perfil Moses" />
+            </div>
+            <div class="depoimento_texto">
+              <div class="depoimento_texto-img">
+                <img src="./aspas_vermelho.png" alt="Imas Aspas vermelho" />
+              </div>
+              <div class="texto-depoimento">
+                <p class="vermelho size">
+                  Meu coração de médica bateu <br />
+                  ‘sem fronteiras’, em muitos<br />
+                  idiomas, especialmente em<br />
+                  árabe, atendendo e ajudando a<br />
+                  atender quem conta com os<br />
+                  nossos projetos para continuar<br />
+                  tendo acesso a cuidados<br />
+                  fundamentais de saúde.
+                  <minha class="span">&rdquor;</minha>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Denise teve a oportunidade de presenciar a transformação do projeto
+            naquela localidade e viver uma experiência que mudou a sua vida<br />
+            para sempre.
+          </p>
+
+          <p>
+            <strong>
+              Histórias como a da Denise só são possíveis com o apoio de<br />
+              pessoas solidárias como você.
+            </strong>
+          </p>
+
+          <p>
+            <strong> A sua doação é muito importante</strong>
+            para seguirmos levando ajuda<br />
+            médica de emergência a pessoas atingidas por conflitos armados,<br />
+            desastres naturais e socioambientais, desnutrição, epidemias e<br />
+            exclusão do acesso a cuidados de saúde.
+          </p>
+
+          <p>Muito obrigada por estar ao nosso lado.</p>
+        </div>
+
+        <div id="destaque" class="bg-secundary">
+          <div class="alinhamento">
+            <div class="destaque_img">
+              <img src="./foto_fernanda.png" alt="Perfil Fernanda" />
+            </div>
+            <div>
+              <p>Fernanda Salerno</p>
+              <span class="destaque_texto"
+                >Gerente de relacionamento com o doador</span
+              >
+            </div>
+          </div>
+          <div class="img_logo_msf">
+            <img src="./logo_msf.png" alt="Logo Médicos Sem Fronteiras" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Quando a vida mais precisar de cuidado, estaremos lá.</p>
+          <ul>
+            <li><img src="./icon_facebook.png" alt="Ícone Facebook" /></li>
+            <li><img src="./icon_twitter.png" alt="Ícone Twitter" /></li>
+            <li><img src="./icon_instagram.png" alt="Ícone Instagram" /></li>
+            <li><img src="./icon_youtube.png" alt="Ícone Youtube" /></li>
+            <li><img src="./icon_linkedin.png" alt="Ícone LinkedIn" /></li>
+          </ul>
+        </footer>
+        <div class="cancelar_inscricao bg-secundary">
+          <a href="#">Cancelar inscrição</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

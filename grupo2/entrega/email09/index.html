@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #625454;
+  background: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 730px;
+  margin: 0 auto;
+  background-image: url(./img_destaque.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 24px;
+}
+
+.container,
+header {
+  width: 589px;
+  margin: 0 auto;
+}
+
+.container {
+  background: #e6e7e8;
+}
+
+.container__content {
+  width: 480px;
+  padding: 27px 0 11px;
+  margin: inherit;
+  margin-top: 220px;
+}
+
+.container .container__content {
+  margin-top: -35px;
+}
+
+.container__content p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.bg-secundary {
+  background: #fff;
+}
+
+.vermelho {
+  color: #f00;
+}
+
+.preto {
+  color: #231f20;
+}
+
+.negrito {
+  font-weight: 600;
+}
+
+.sizeXXL {
+  font-size: 26px;
+}
+
+.sizeXL {
+  font-size: 20px;
+}
+
+.size {
+  font-size: 16px;
+}
+
+.sizeX {
+  font-size: 18px;
+}
+
+header {
+  padding: 5px 0;
+  background: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: inherit;
+}
+
+#btn {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+#btn .destaque {
+  width: 250px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  background: #025448;
+  border-radius: 10px;
+}
+
+#btn .destaque-texto {
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+  background: #1e3764;
+  border-radius: 10px;
+  color: #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+#btn .destaque-icone {
+  margin: 0 auto;
+}
+
+#btn .destaque img {
+  width: 1.6rem;
+}
+
+.depoimento {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.depoimento_img {
+  width: 176px;
+}
+
+.depoimento_texto {
+  display: flex;
+  gap: 4px;
+  align-items: start;
+}
+
+.depoimento_texto p {
+  line-height: 1.1;
+}
+
+.depoimento_texto-img {
+  width: 40px;
+  margin-top: -16px;
+}
+
+#destaque {
+  width: 589px;
+  margin: 0 auto;
+  padding: 13px 40px 13px 68px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #000;
+}
+
+.alinhamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.destaque_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #586469;
+}
+
+.destaque_img img {
+  width: 63px;
+}
+
+.destaque_texto {
+  font-size: 12px;
+}
+
+.img_logo_msf {
+  width: 155px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px 0 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  border-bottom: 18px solid #005448;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.cancelar_inscricao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+
+.cancelar_inscricao a {
+  font-size: 11px;
+  color: #586469;
+}
+
+      </style>
+    <title>MSF - Médicos Sem Fronteiras</title>
+  </head>
+  <body>
+    <main>
+      <header class="bg-secundary">
+        <p class="vermelho">
+          <a href="#">Responder pesquisa</a>
+        </p>
+        <p>Se não estiver visualizando o e-mail, <a href="#">clique aqui</a></p>
+      </header>
+
+      <!-- <div class="container"> -->
+      <div class="container__content">
+        <p><span class="vermelho">Olá, [NOME],</span> tudo bem?</p>
+
+        <span>
+          Mais uma vez
+          <strong>gostaríamos de agradecer imensamente pelo apoio</strong><br />
+        </span>
+      </div>
+
+      <div class="container">
+        <div class="container__content">
+          <p>
+            <strong> constante a Médicos Sem Fronteiras (MSF). </strong>
+            Sem a sua generosidade,<br />
+            não seria possível salvarmos tantas vidas ao redor do mundo.
+          </p>
+
+          <p>
+            <strong>
+              Pensando em compreender melhor o comportamento e os interesses<br />dos
+              nossos doadores, selecionamos você para responder a essa<br />breve
+              pesquisa, e adoraríamos que aceitasse participar.
+            </strong>
+          </p>
+
+          <p class="vermelho sizeX">
+            É rápido. Precisaremos de poucos minutos do seu tempo.
+          </p>
+
+          <p>É só clicar no botão abaixo.</p>
+
+          <div id="btn">
+            <div class="destaque">
+              <span class="destaque-texto">responder pesquisa</span>
+              <span class="destaque-icone">
+                <img src="./smile.png" alt="Ícone Smile Love" />
+              </span>
+            </div>
+          </div>
+          <p>
+            <strong>
+              Esperamos continuar contando com sua ajuda recorrente</strong
+            >
+            para <br />
+            seguirmos levando cuidados de saúde a pessoas afetadas por graves<br />crises
+            humanitárias.
+          </p>
+        </div>
+
+        <div id="destaque" class="bg-secundary">
+          <div class="alinhamento">
+            <div class="destaque_img">
+              <img src="./foto_fernanda.png" alt="Perfil Fernanda" />
+            </div>
+            <div>
+              <p>Fernanda Salerno</p>
+              <span class="destaque_texto"
+                >Gerente de relacionamento com o doador</span
+              >
+            </div>
+          </div>
+          <div class="img_logo_msf">
+            <img src="./logo_msf.png" alt="Logo Médicos Sem Fronteiras" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Quando a vida mais precisar de cuidado, estaremos lá.</p>
+          <ul>
+            <li><img src="./icon_facebook.png" alt="Ícone Facebook" /></li>
+            <li><img src="./icon_twitter.png" alt="Ícone Twitter" /></li>
+            <li><img src="./icon_instagram.png" alt="Ícone Instagram" /></li>
+            <li><img src="./icon_youtube.png" alt="Ícone Youtube" /></li>
+            <li><img src="./icon_linkedin.png" alt="Ícone LinkedIn" /></li>
+          </ul>
+        </footer>
+        <div class="cancelar_inscricao bg-secundary">
+          <a href="#">Cancelar inscrição</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #625454;
+  background: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 730px;
+  margin: 0 auto;
+}
+
+.container,
+header {
+  width: 589px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: -3px;
+  background: #f1f2f2;
+}
+
+.container__content {
+  width: 480px;
+  padding: 16px 0 11px;
+  margin: inherit;
+}
+
+.container__content p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.bg-secundary {
+  background: #fff;
+}
+
+.vermelho {
+  color: #f00;
+}
+
+.preto {
+  color: #231f20;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  position: relative;
+  z-index: 1px;
+  padding: 5px 0;
+  background: #fff;
+  font-size: 12px;
+  text-align: right;
+  border-bottom: 3px solid #005448;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: inherit;
+}
+
+.banner {
+  margin-top: -3px;
+}
+
+#destaque {
+  width: 589px;
+  margin: 0 auto;
+  padding: 13px 40px 13px 68px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #000;
+}
+
+.alinhamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.destaque_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #586469;
+}
+
+.destaque_img img {
+  width: 63px;
+}
+
+.destaque_texto {
+  font-size: 12px;
+}
+
+.img_logo_msf {
+  width: 155px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px 0 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  border-bottom: 18px solid #005448;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.cancelar_inscricao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+
+.cancelar_inscricao a {
+  font-size: 11px;
+  color: #586469;
+}

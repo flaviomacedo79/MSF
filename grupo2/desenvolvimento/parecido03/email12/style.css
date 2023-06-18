@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #625454;
+  background: #fff;
+  counter-reset: mynum;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 730px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+.bg-secundary {
+  background: #fff;
+}
+
+.vermelho {
+  color: #f00;
+}
+
+.preto {
+  color: #000;
+}
+
+.negrito {
+  font-weight: 600;
+}
+
+.sizeXXL {
+  font-size: 26px;
+}
+
+.sizeXL {
+  font-size: 20px;
+}
+
+.size {
+  font-size: 16px;
+}
+
+.sizeX {
+  font-size: 18px;
+}
+
+header {
+  padding: 5px 0;
+  background: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: cetner;
+  justify-content: space-between;
+  border-bottom: 3px solid #005448;
+}
+
+header a {
+  color: inherit;
+}
+
+.container {
+  width: 589px;
+  margin: 0 auto;
+  background: #f1f2f2;
+}
+
+.container__content {
+  width: 480px;
+  padding-bottom: 11px;
+  margin: inherit;
+}
+
+.container__content p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.titulo {
+  margin: -5px 0 16px;
+  padding-top: 8px;
+}
+
+.titulo p {
+  line-height: 1.2;
+  margin: 0;
+}
+
+.bg_color {
+  background: #fff;
+  padding-top: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.bg_color::after {
+  content: "Foto: Mariana Aballa/MSF";
+  font-size: 10px;
+  rotate: -90deg;
+  color: #6d6f71;
+  white-space: nowrap;
+  margin-left: -46px;
+}
+
+.depoimento {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.depoimento_img {
+  position: relative;
+  max-width: 176px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.depoimento_img span {
+  margin-top: 59px;
+  margin-left: -70px;
+  margin-right: -50px;
+  rotate: -90deg;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.depoimento_texto {
+  display: flex;
+  gap: 4px;
+  align-items: start;
+}
+
+.depoimento_texto p {
+  line-height: 1.1;
+}
+
+.depoimento_texto-img {
+  width: 40px;
+  margin-top: -16px;
+}
+
+#lista {
+  margin-bottom: 16px;
+}
+
+#lista p {
+  margin: 2px 0;
+}
+
+#lista span {
+  margin-left: 26px;
+}
+
+p.numbered:before {
+  content: counter(mynum) ".";
+  counter-increment: mynum;
+  font-weight: 600;
+  color: #ee0000;
+  margin-right: 10px;
+}
+
+#destaque {
+  width: 589px;
+  margin: 0 auto;
+  padding: 13px 40px 13px 68px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  color: #000;
+}
+
+.alinhamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.destaque_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #586469;
+}
+
+.destaque_img img {
+  width: 63px;
+}
+
+.destaque_texto {
+  font-size: 12px;
+}
+
+.img_logo_msf {
+  width: 155px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px 0 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  border-bottom: 18px solid #005448;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.cancelar_inscricao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+
+.cancelar_inscricao a {
+  font-size: 11px;
+  color: #586469;
+}
